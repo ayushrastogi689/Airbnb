@@ -1,7 +1,10 @@
+'use client'
+
 import Container from "../Container"
-import Logo from "../Logo/Logo"
-import Search from "../Search/Search"
+import Logo from "./Logo/Logo"
+import Search from "./Search/Search"
 import UserMenu from "./UserMenu/UserMenu"
+import Categories from "./Categories/Categories"
 
 const Navbar = () => {
   return (
@@ -14,7 +17,8 @@ const Navbar = () => {
             <UserMenu />
          </div>
         </Container>              
-        </div>
+      </div>
+      <Categories />
     </div>
   )
 }
