@@ -1,4 +1,6 @@
-import Image from "next/image"
+'use client'
+import { BiSearch } from "react-icons/bi";
+
 const Search = () => {
   return (
     <div className="border-[1px] w-full md:w-auto py-2 rounded-full shadow-sm hover:shadow-md transition cursor-pointer">
@@ -14,11 +16,14 @@ const Search = () => {
               </div>
 
               <div className="text-sm pl-6 pr-2 text-gray-600 flex flex-row items-center gap-3">
-                  Add guest
+          <div className="hidden sm:block">
+            Add guest
+          </div>
+          <div className=" p-2 rounded-full text-white " style={{ backgroundColor: '#ff385c' }}>
+                <BiSearch size={18} />
               </div>
-             <div className=" p-2 rounded-full text-white " style={{ backgroundColor: '#ff385c' }}>
-                <Image className="cursor-pointer" alt="search" height="12" width="12" src="/icons/search.svg"/>
-              </div>
+          </div>
+             
         </div>
     </div>
   )
