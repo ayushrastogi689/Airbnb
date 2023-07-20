@@ -1,12 +1,11 @@
 'use client'
-
 import Container from "../Container"
 import Logo from "./Logo/Logo"
 import Search from "./Search/Search"
 import UserMenu from "./UserMenu/UserMenu"
 import Categories from "./Categories/Categories"
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
           <div className="py-4 border-b[1px]">
@@ -23,4 +22,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavBar
