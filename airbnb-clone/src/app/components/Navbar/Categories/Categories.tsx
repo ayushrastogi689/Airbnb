@@ -4,9 +4,11 @@ import Container from "../../Container"
 import CategoriesBox from "../../CategoriesBox/CategoriesBox"
 
 import { TbBeach, TbMountain, TbPool } from "react-icons/tb"
-import { GiWindmill, GiIsland, GiBoatFishing, GiCastle, GiForestCamp } from "react-icons/gi"
+import { GiWindmill, GiIsland, GiBoatFishing, GiCastle, GiForestCamp, GiCaveEntrance, GiBarn, GiCactus } from "react-icons/gi"
 import {MdOutlineVilla} from "react-icons/md"
-import {FaSkiing} from "react-icons/fa"
+import { FaSkiing } from "react-icons/fa"
+import { BsSnow } from "react-icons/bs"
+import {IoDiamond} from "react-icons/io5"
 
 import { usePathname, useSearchParams } from "next/navigation"
 export const categories = [
@@ -60,6 +62,32 @@ export const categories = [
         label: "Camp",
         description: "This property has camping activities"
     },
+    {
+        icon: BsSnow,
+        label: "Arctic",
+        description: "This property is at Arctic"
+    },
+    {
+        icon: GiCaveEntrance,
+        label: "Cave",
+        description: "This property is located near Caves"
+    },
+    {
+        icon: GiCactus,
+        label: "Desert",
+        description: "This property is in the desert"
+    },
+    {
+        icon: GiBarn,
+        label: "Barns",
+        description: "This property is in the barn"
+    },
+    {
+        icon: IoDiamond,
+        label: "Lux",
+        description: "This property is in the barn"
+    },
+
 ]
 
 const Categories = () => {
