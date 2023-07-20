@@ -1,6 +1,6 @@
 'use client'
 import {AiOutlineMenu} from "react-icons/ai"
-import UserAvatar from "../../UserAvatar/UserAvatar"
+import UserAvatar from "../UserAvatar/UserAvatar"
 import { useCallback, useState } from "react"
 import MenuItem from "../MenuItem/MenuItem"
 
@@ -31,9 +31,9 @@ const UserMenu = () => {
           {isOpen && (<div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
               <div className="flex flex-col cursor-pointer ">
                   <>
-                      <MenuItem onClick={}
+                      <MenuItem 
                       label = "Sign Up" />
-                      <MenuItem onClick={}
+                      <MenuItem 
                       label = "Login" />
                   </>
               </div>
